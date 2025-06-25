@@ -1,0 +1,224 @@
+
+:root {
+    --primary-color: #b15b59; 
+    --secondary-color: #768cc9; 
+    --accent-color: #d8c4f1;   
+    --text-dark: #333;
+    --text-light: #f8f8f8;
+    --background-light: #ffffff;
+    --background-body: #fdf7f7; 
+    --border-light: #e0e0e0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-body); 
+    color: var(--text-dark);
+}
+
+
+header {
+    background-color: var(--primary-color); 
+    color: var(--text-dark);
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    color: var(--text-dark);
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+
+main {
+    padding: 20px;
+    max-width: 1300px;
+    margin: 30px auto;
+    background-color: var(--background-light);
+    box-shadow: 0 0 15px rgba(0,0,0,0.08);
+    border-radius: 10px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed var(--border-light);
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    color: var(--text-dark);
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+
+h3 {
+    color: var(--text-light); 
+    margin-top: 25px;
+}
+
+
+ol {
+    list-style-position: inside; 
+    padding-left: 0;
+}
+
+.dorama-item {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    background-color: var(--background-light);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0,0, 0.1);
+}
+
+.dorama-item h3 {
+    color: var(--text-dark); 
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.dorama-item img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.dorama-item p {
+    flex: 1;
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: var(--text-dark);
+}
+
+
+#tabelaDoramas {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95em;
+}
+
+#tabelaDoramas th, #tabelaDoramas td {
+    border: 1px solid var(--border-light);
+    padding: 12px;
+    text-align: left;
+}
+
+#tabelaDoramas th {
+    background-color: var(--background-light); 
+    color: var(--text-black);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#tabelaDoramas tr:nth-child(even) {
+    background-color: #ccc3c3; 
+}
+
+#tabelaDoramas tr:hover {
+    background-color: #e0d2d2; 
+}
+
+
+form {
+    background-color: var(--background-light);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+form input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: var(--accent-color); 
+    color: var(--text-dark);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #c4aae0; 
+}
+
+
+.hidden {
+    display: none;
+}
+
+#mensagemConfirmacao {
+    color: #eef5ee; 
+    font-size: 1.1em;
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #4CAF50;
+    background-color: #051d07;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: var(--primary-color); 
+    color: var(--text-dark);
+    margin-top: 40px;
+    font-size: 0.9em;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
